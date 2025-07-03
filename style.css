@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#controls {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 2;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+#controls label {
+  display: block;
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+#pauseBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  z-index: 2;
+  padding: 6px 14px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  display: none;
+}
+
+canvas {
+  display: block;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  h1 { font-size: 1.2rem; }
+  #controls label { font-size: 0.85rem; }
+  #pauseBtn { font-size: 0.9rem; }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 { font-size: 1.4rem; }
+  #controls label { font-size: 0.9rem; }
+}
